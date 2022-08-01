@@ -47,3 +47,5 @@ From a detections perspective, this is how this tool works:
 
 
 This can be a helpful way to validate any detections around suspicious DNS TXT traffic
+
+**Note: This tool gets all but the last 4-5 bytes of a the sent file, due to how I perform the parsing on the server side. However, this is still sufficient for testing exfil over TXT records**
