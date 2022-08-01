@@ -4,7 +4,7 @@ Simple client/server in golang to help with testing data exfil detections over D
 ## Steps:
 On Server Host:
 
-1. > git clone https://github.com/cedowens/dns-TXT-exfi-test
+1. > git clone https://github.com/cedowens/dns-TXT-exfil-test
 
 2. > cd dns-TXT-exfil-test/server
 
@@ -17,7 +17,7 @@ On Server Host:
 
 On Client Host:
 
-1. > git clone https://github.com/cedowens/dns-TXT-exfi-test
+1. > git clone https://github.com/cedowens/dns-TXT-exfil-test
 
 2. > cd dns-TXT-exfil-test/client
 
