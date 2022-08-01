@@ -46,9 +46,6 @@ func main() {
             initializer += 1
             dom := sendme + ".macconsultants.com"
 
-
-              fmt.Println(dom + "\n")
-
             r.LookupTXT(context.Background(),dom)
 
           } else {
