@@ -33,13 +33,13 @@ On Client Host:
 
 From a detections perspective, this is how this tool works:
 
-1. The client takes the file, breaks it into 100 character hex encoded chunks
+1. The client takes the file, breaks it into 50 character hex encoded chunks
 
-2. The client then takes each 100 character chunk and sends it in a DNS TXT record request as follows:
+2. The client then takes each 50 character chunk and sends it in a DNS TXT record request as follows:
 
 `[hex_file_data].macconsultants.com,  TYPE: TXT, CLASS IN`
 
-3. The server takes each 200 character hex encoded chunk, unhexlifies it, and writes it to a file in the current directory named "outfile"
+3. The server takes each 50 character hex encoded chunk, unhexlifies it, and writes it to a file in the current directory named "outfile"
 
 4. The server also sends a TXT answer to that query as follows:
 
